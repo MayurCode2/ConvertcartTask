@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const DishController = require('../controllers/DishController');
+const dishController = require('../controllers/dishController');
 
 /**
  * ROUTES - Define API endpoints
- * Routes connect URLs to Controllers
+ * Routes connect URLs to Controller functions
  */
 
 // GET /search/dishes?name=biryani&minPrice=150&maxPrice=300
-router.get('/dishes', DishController.search);
+router.get('/dishes', dishController.search);
 
 // GET /search/stats
-router.get('/stats', DishController.getStats);
+router.get('/stats', dishController.getStats);
 
 module.exports = router;
