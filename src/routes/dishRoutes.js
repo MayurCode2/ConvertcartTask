@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
+import * as dishController from '../controllers/dishController.js';
 const router = express.Router();
-const dishController = require('../controllers/dishController');
 
 /**
  * ROUTES - Define API endpoints
@@ -13,4 +13,4 @@ router.get('/dishes', dishController.search);
 // GET /search/stats
 router.get('/stats', dishController.getStats);
 
-module.exports = router;
+export default router;

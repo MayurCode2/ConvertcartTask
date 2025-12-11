@@ -1,5 +1,5 @@
-const dishService = require('../services/dishService');
-const Response = require('../views/Response');
+import dishService from '../services/dishService.js';
+import Response from '../views/Response.js';
 
 /**
  * CONTROLLER - Request handling
@@ -74,7 +74,7 @@ async function getStats(req, res) {
   }
 }
 
-module.exports = {
+export {
   search,
   getStats
 };

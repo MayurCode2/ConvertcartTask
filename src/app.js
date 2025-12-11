@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const dishRoutes = require('./routes/dishRoutes');
-const Response = require('./views/Response');
+import express from 'express';
+import cors from 'cors';
+import dishRoutes from './routes/dishRoutes.js';
+import Response from './views/Response.js';
 
 // Create Express app
 const app = express();
@@ -19,18 +19,7 @@ if (process.env.NODE_ENV === 'development') {
   });
 }
 
-// Health check endpoint
-app.get('/', (req, res) => {
-  res.json({
-    success: true,
-    message: 'Restaurant Dish Search API is running',
-    version: '1.0.0',
-    endpoints: {
-      searchDishes: 'GET /search/dishes?name={dishName}&minPrice={min}&maxPrice={max}',
-      stats: 'GET /search/stats'
-    }
-  });
-});
+
 
 // API Routes
 app.use('/search', dishRoutes);
@@ -46,5 +35,5 @@ app.use((err, req, res, next) => {
   return Response.error(res, 500, 'Internal server error', err.message);
 });
 
-module.exports = app;
+export default app;
 

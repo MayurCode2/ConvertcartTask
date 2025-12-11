@@ -358,7 +358,3 @@ For issues and questions, please create an issue in the GitHub repository.
 ---
 
 **Happy Coding! 🎉**
-
-#   C o n v e r t c a r t T a s k  
- #   C o n v e r t c a r t T a s k  
- 

@@ -1,4 +1,4 @@
-const { searchByName, getStats } = require('../models/Dish');
+import { searchByName, getStats } from '../models/Dish.js';
 
 /**
  * SERVICE - Business logic layer
@@ -38,7 +38,7 @@ async function getDatabaseStats() {
   }
 }
 
-module.exports = {
+export default {
   searchDishes,
   getDatabaseStats
 };

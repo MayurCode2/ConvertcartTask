@@ -58,7 +58,7 @@ function stats(res, stats) {
   return success(res, 200, { stats });
 }
 
-module.exports = {
+export default {
   success,
   error,
   searchResults,

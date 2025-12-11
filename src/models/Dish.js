@@ -1,4 +1,4 @@
-const { pool } = require('../config/database');
+import { pool } from '../config/database.js';
 
 /**
  * MODEL - Database operations
@@ -87,7 +87,7 @@ async function getStats() {
   };
 }
 
-module.exports = {
+export {
   searchByName,
   getStats
 };
