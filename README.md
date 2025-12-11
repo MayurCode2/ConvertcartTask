@@ -2,6 +2,23 @@
 
 A simple and efficient backend service that allows users to search for restaurants based on dish names with mandatory price range filtering. The system returns the top 10 restaurants where the specified dish has been ordered the most.
 
+## 🌐 Live Demo
+
+**🔗 API URL:** [https://convertcarttask.onrender.com](https://convertcarttask.onrender.com)
+
+**📦 GitHub Repository:** [https://github.com/MayurCode2/ConvertcartTask](https://github.com/MayurCode2/ConvertcartTask)
+
+### Try It Now!
+```bash
+# Search for biryani dishes between ₹150-₹300
+curl "https://convertcarttask.onrender.com/search/dishes?name=biryani&minPrice=150&maxPrice=300"
+
+# Get database statistics
+curl "https://convertcarttask.onrender.com/search/stats"
+```
+
+**Note:** The free tier on Render may take 30-60 seconds for the first request if the service was sleeping.
+
 ## 🚀 Features
 
 - Search restaurants by dish name
@@ -29,8 +46,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd restaurant-dish-search
+git clone https://github.com/MayurCode2/ConvertcartTask.git
+cd ConvertcartTask
 ```
 
 ### 2. Install Dependencies
@@ -335,9 +352,17 @@ This project is licensed under the MIT License.
 
 Created as a backend coding assessment project.
 
+**GitHub:** [MayurCode2](https://github.com/MayurCode2)
+
 ## 📞 Support
 
-For issues and questions, please create an issue in the GitHub repository.
+For issues and questions, please create an issue in the [GitHub repository](https://github.com/MayurCode2/ConvertcartTask/issues).
+
+## 🔗 Links
+
+- **Live API:** [https://convertcarttask.onrender.com](https://convertcarttask.onrender.com)
+- **GitHub Repository:** [https://github.com/MayurCode2/ConvertcartTask](https://github.com/MayurCode2/ConvertcartTask)
+- **Example API Call:** [Search Biryani (₹150-300)](https://convertcarttask.onrender.com/search/dishes?name=biryani&minPrice=150&maxPrice=300)
 
 ---
 
