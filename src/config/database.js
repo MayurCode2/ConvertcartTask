@@ -7,19 +7,15 @@ const dbConfig = {
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME || 'restaurant_search',
-  port: process.env.DB_PORT || 3306,
+  port: parseInt(process.env.DB_PORT) || 3306,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
   // Connection timeout settings for free MySQL hosts
   connectTimeout: 60000, // 60 seconds
-  acquireTimeout: 60000,
-  timeout: 60000,
   // Keep connection alive
   enableKeepAlive: true,
-  keepAliveInitialDelay: 0,
-  // Reconnect settings
-  reconnect: true
+  keepAliveInitialDelay: 0
 };
 
 // Create connection pool
