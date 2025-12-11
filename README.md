@@ -266,25 +266,9 @@ restaurant-dish-search/
 
 ## 🚢 Deployment
 
-### Deploy to Railway
 
-1. Create account on [Railway](https://railway.app/)
-2. Install Railway CLI:
-   ```bash
-   npm install -g @railway/cli
-   ```
-3. Login and deploy:
-   ```bash
-   railway login
-   railway init
-   railway up
-   ```
-4. Add MySQL database:
-   - Go to Railway dashboard
-   - Click "New" → "Database" → "MySQL"
-   - Copy credentials to environment variables
-5. Set environment variables in Railway dashboard
-6. Run database migrations manually or via Railway console
+
+
 
 ### Deploy to Render
 
